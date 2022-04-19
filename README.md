@@ -4,6 +4,8 @@ Write a structured query that selects the most important rows per assigned prior
 
 
 ## Input Dataset
+
+````
 val input = Seq(
   (1, "MV1"),
   (1, "MV2"),
@@ -18,12 +20,16 @@ scala> input.show
 |  2|   VPV|
 |  2|Others|
 +---+------+
+````
 
 ## Result
 scala> solution.show(truncate = false)
+
+````
 +---+----+
 | id|name|
 +---+----+
 |  1| MV1|
 |  2| VPV|
 +---+----+
+````
